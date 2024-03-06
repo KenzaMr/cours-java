@@ -33,6 +33,22 @@ console.log(animal)
 // Supprimer
 animal.splice(2, 1)
 console.log(animal)
+
+//  For(...of...) permet de parcourir les élements d'un objet otérable (ex: tableau, string)
+//  Sur le tableau animals faire une boucle for () pour afficher les élements du tableau 
+for(let i=0; i< animal.length;i++){
+    console.log(animal[i])
+}
+//  Sur le tableau animals faire une boucle for (...of...) pour afficher tous les élements du tableau 
+for(let x of animal){
+    console.log(x)
+}
+
+// foreach (){} est une méthode JavaScript qui permet d'itérer sur les élements d'un tableau 
+animal.forEach(function (aniamls){
+    console.log(aniamls)
+})
+
 // Déclare un tableau contenant (Paris, Berlin,Rome, Moscou, Londre, Madrid)
 const city= ["Paris" ,"Berlin","Rome"," Moscou,","Londres"," Madrid"]
 console.log(city)
@@ -41,9 +57,20 @@ console.log(city)
 -Ajoute au debbut Vienne
 -Rome devient alger
 -Retourne la taille du tableau */
-function ville(){
-    city.pop()
-    city.unshift("Vienne")
+// function ville(array){
+//     array.pop()
+//    array.unshift("Vienne")
+//     array.splice(3,1,"Alger")
+//     return array.lenght
+
+// }
+// ville(city)
+// console.log()
+            // Correction
+const modifyArray = (array) =>{
+    array.pop()
+    array.unshift("Vienne")
+    array.splice(3,1,"Alger")
+    return array.lenght
 
 }
-ville(city)
