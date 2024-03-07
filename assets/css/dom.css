@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+.txt-green{
+    color: rgb(255, 5, 151);
+}
